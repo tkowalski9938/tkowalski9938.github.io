@@ -10,6 +10,8 @@
 </head>
 <body>
 
+ 
+<div class="entireDocument">
 <div class="w3-top">
     <div id="top-bar"><a href="#top"><strong>TKowalski</strong></a>
     </a>
@@ -93,7 +95,7 @@
                 <br>
                 <p>Worked extensively with Python, APIs, JSONs, and SQLite</p>
                 <br>
-                <a target="_blank" href="https://github.com/tkowalski9938/Boosted-Bot"><em>Click here to access the repository</em></a>
+                <a target="_blank" class="w3-hover-text-green" href="https://github.com/tkowalski9938/Boosted-Bot"><em>Click here to access the repository</em></a>
               </div>
             </li>
             <li>
@@ -144,6 +146,64 @@
   <div class="w3-xlarge w3-section">
   </div>
   <p>Built using <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a><p> framework</p></p>
+  <p>Loading animation taken from <a target="_blank" class="w3-hover-text-green" href="https://codepen.io/AlexWarnes/pen/jXYYKL">codepen.io</a></p>
 </footer>
+
+</div>
+
+<div class="loader-wrapper">
+  <div class="spinner-box">
+    <div class="leo-border-1">
+      <div class="leo-core-1"></div>
+    </div> 
+    <div class="leo-border-2">
+      <div class="leo-core-2"></div>
+    </div> 
+  </div>
+</div>
+  <script>
+    let spinnerWrapper = document.querySelector(".loader-wrapper");
+    let entireDocument = document.querySelector(".entireDocument");
+    
+    entireDocument.style.display = 'none';
+
+    async function main() {
+      const waitForLoad = new Promise(function(res) {
+      window.addEventListener("load", res);
+    });
+
+    const wait1500ms = new Promise(function(res) {
+      setTimeout(res, 1500);
+    });
+
+    await Promise.all([waitForLoad, wait1500ms]);
+
+    spinnerWrapper.style.display = "none";
+    entireDocument.style.display = 'initial';
+  }
+
+main()
+
+
+
+    // setTimeout(function() {
+    //   x = true;
+    //   console.log(x)
+    // }, 1500);
+
+
+    // window.addEventListener('load', function() {
+    //   y = true;
+    // })
+
+    
+    // if (x && y) {
+    //   spinnerWrapper.style.display = 'none';
+    //   entireDocument.style.display = 'initial';
+    // };
+
+  </script>
+
+
 </body>
 </html>
