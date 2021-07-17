@@ -9,7 +9,7 @@
     <link rel="shortcut  icon" href="./resources/sunglasses.png">
 </head>
 <body>
-
+  <script>document.body.className='js';</script>
 <div class="entireDocument">
 <div class="w3-top">
     <div id="top-bar"><a href="#top"><strong>TKowalski</strong></a>
@@ -170,30 +170,30 @@
     </div> 
   </div>
 </div>
-  <script>
-    let spinnerWrapper = document.querySelector(".loader-wrapper");
-    let entireDocument = document.querySelector(".entireDocument");
-    
-    entireDocument.style.display = 'none';
 
-    async function main() {
-      const waitForLoad = new Promise(function(res) {
-      window.addEventListener("load", res);
-    });
+<script>
+      
+  let spinnerWrapper = document.querySelector(".loader-wrapper");
+  let entireDocument = document.querySelector(".entireDocument");
 
-    const wait1500ms = new Promise(function(res) {
-      setTimeout(res, 1500);
-    });
+  async function main() {
+    const waitForLoad = new Promise(function(res) {
+    window.addEventListener("load", res);
+  });
 
-    await Promise.all([waitForLoad, wait1500ms]);
+  const wait1500ms = new Promise(function(res) {
+    setTimeout(res, 1500);
+  });
 
-    spinnerWrapper.style.display = "none";
-    entireDocument.style.display = 'initial';
-  }
+  entireDocument.style.display = 'none';
+
+  await Promise.all([waitForLoad, wait1500ms]);
+
+  spinnerWrapper.style.display = "none";
+  entireDocument.style.display = 'initial';
+}
 
 main()
-  </script>
-
-
+</script>
 </body>
 </html>

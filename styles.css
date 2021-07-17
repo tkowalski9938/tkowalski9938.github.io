@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
 }
+.js .accordion:nth-child(n+1) { display: none }
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Bona Nova', serif;}
 body, html {
   height: 100%;
