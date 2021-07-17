@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Bona Nova', serif;}
 body, html {
@@ -12,9 +13,13 @@ a {
     text-decoration: none;
 }
 #top-bar {
-    font-size: 2.5em;
+    font-size: 2em;
     color: black;
-    font-family: 'Tillana', cursive;
+    /* font-family: 'Tillana', cursive; */
+    font-family: 'Syncopate', sans-serif;
+}
+#middle_thing {
+  font-family: 'Syncopate', sans-serif;
 }
 
 /* Create a Parallax Effect */
