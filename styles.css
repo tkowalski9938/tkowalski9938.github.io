@@ -67,7 +67,9 @@ a {
     min-height: 400px;
   }
 }
-
+#familar {
+    align-self: center;
+}
 #about_me {
     line-height: 2.5em;
     text-indent: 2.5em;
@@ -290,7 +292,7 @@ a {
   align-items: center;
   border-radius: 50%;
   background: rgb(63,249,220);
-  background: linear-gradient(0deg, rgba(159, 162, 173, 0.2) 33%, rgb(90, 99, 97) 100%);
+  background: linear-gradient(0deg, rgb(18, 190, 162) 33%, rgb(90, 99, 97) 100%);
   animation: spin3D 1.8s linear 0s infinite;
 }
 
@@ -311,7 +313,7 @@ a {
   align-items: center;
   border-radius: 50%;
   background: rgb(75, 55, 22);
-  background: linear-gradient(0deg, rgba(201, 152, 19, 0.2) 33%, rgb(51, 25, 4) 100%);
+  background: linear-gradient(0deg, rgba(190, 241, 21, 0.719) 33%, rgb(51, 25, 4) 100%);
   animation: spin3D 2.2s linear 0s infinite;
 }
 
