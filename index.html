@@ -4,12 +4,21 @@
     <title>TKowalski</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      body.js .nojs { display: none; }
+    </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut  icon" href="./resources/sunglasses.png">
 </head>
 <body>
-  <script>document.body.className='js';</script>
+  <script>
+    document.body.className += ' js';
+</script>
+
+<div class="nojs">
+    ... No flicker!
+</div>
 <div class="entireDocument">
 <div class="w3-top">
     <div id="top-bar"><a href="#top"><strong>TKowalski</strong></a>
